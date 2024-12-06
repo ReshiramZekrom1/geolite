@@ -279,7 +279,7 @@
     }
 
 	
-
+	echo "ip_from, ip_to, geoname_id<br />";
     
 	foreach($CheckPointsCODE as $CP) 
 	{ 
