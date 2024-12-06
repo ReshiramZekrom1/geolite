@@ -1,5 +1,24 @@
 # __GeoLite__ (SQLite)
 
+# UPDATE DECEMBER 2024
+
+I've managed to update the country database only since the old one was indeed just too old. It's based on the [IP2LocationLite](https://lite.ip2location.com/database/db1-ip-country) database though. 
+
+In case you'd like to update it again, you can use the crappy but functioning tool I made with PHP. Just follow those passages:
+
+1. Download the IP2Location Lite Country DB in .CSV from [here](https://lite.ip2location.com/database/db1-ip-country) (Requires signing-up). The CSV db should look like the one in the repository.
+2. Open the CSV file with Notepad++.
+3. Copy all the content and paste it in the PHP page you can find it in the repository (just upload it on a free website or smth).
+4. Click on "Genera" and copy the output.
+5. Now you have to convert the text in SQL, I used this [website](https://konbert.com/convert/txt/to/sqlite).
+6. Download the SQL file, and replace that table to the "country_block" table of the "maxmind_country.db" of GeoLite. You can use any SQL editor to do so.
+7. Make sure that the file structure is exactly the same of the original and Try it :)
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 It is based on the free product [GeoLite2](https://dev.maxmind.com/geoip/geoip2/geolite2/) by [MaxMind](https://www.maxmind.com/en/home).
 
 I was updating the country database every month for MySQL and decided to update the GeoIp databases by Whitetiger's include as many people requested. It turned out I was unable to, the way the databases were structured. I converted my version to SQLite and started comparing the two includes with geolite.inc being victorious. But this was to be expected with not only the good database structure and the use of indexes but also the appropriate queries to avoid range scans. Even though latest database provide more data than last year, it did not affect the performance in any way.
