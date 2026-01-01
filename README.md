@@ -15,6 +15,19 @@ In case you'd like to update it again, you can use the crappy but functioning to
 7. Make sure that the file structure is exactly the same of the original and Try it :)
 
 
+# UPDATE JANUARY 2026
+
+Updated the city db too with the help of copilot. Based on the [IP2LocationLite]([https://lite.ip2location.com/database/db1-ip-country](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)) database.
+
+Steps (City Database):
+
+1. Download the IP2Location™ LITE IP-COUNTRY-REGION-CITY-LATITUDE-LONGITUDE-ZIPCODE-TIMEZONE Database CIDR version from [here]([https://lite.ip2location.com/database/db1-ip-country](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)) (Requires signing-up).
+2. Download GeoNames' cities5000 from [here](https://download.geonames.org/export/dump/cities5000.zip).
+3. Unzip the IP2Location db in order to have the .CSV file ready to use.
+4. Put everything in the same folder of "[maxmind_city generator.py](https://github.com/ReshiramZekrom1/geolite/blob/master/maxmind_city%20generator.py)".
+5. Run the py file and wait.
+
+
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
