@@ -17,7 +17,7 @@ In case you'd like to update it again, you can use the crappy but functioning to
 
 # UPDATE JANUARY 2026
 
-Updated the city db too with the help of copilot. Based on the [IP2LocationLite]([https://lite.ip2location.com/database/db1-ip-country](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)) database.
+Updated the city and the asn db too with the help of copilot. Based on the [IP2LocationLite]([https://lite.ip2location.com/database/db1-ip-country](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)) database.
 
 Steps (City Database):
 
@@ -27,7 +27,11 @@ Steps (City Database):
 4. Put everything in the same folder of "[maxmind_city generator.py](https://github.com/ReshiramZekrom1/geolite/blob/master/maxmind_city%20generator.py)".
 5. Run the py file and wait.
 
-
+Steps (ASN Database):
+1. Download the IP2Location™ LITE IP-ASN Database from [here](https://lite.ip2location.com/database-asn).
+2. Unzip the IP2Location db in order to have the .CSV file ready to use.
+3. Put everything in the same folder of "[maxmind_asn_generator.py](https://github.com/ReshiramZekrom1/geolite/blob/master/maxmind_asn_generator.py)".
+4. Run the py file and wait.
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
