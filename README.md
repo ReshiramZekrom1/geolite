@@ -1,20 +1,5 @@
 # __GeoLite__ (SQLite)
 
-# UPDATE DECEMBER 2024
-
-I've managed to update the country database only since the old one was indeed just too old. It's based on the [IP2LocationLite](https://lite.ip2location.com/database/db1-ip-country) database though. 
-
-In case you'd like to update it again, you can use the crappy but functioning tool I made with PHP. Just follow those passages:
-
-1. Download the IP2Location Lite Country DB in .CSV from [here](https://lite.ip2location.com/database/db1-ip-country) (Requires signing-up). The CSV db should look like the one in the repository.
-2. Open the CSV file with Notepad++.
-3. Copy all the content and paste it in the PHP page you can find in the repository (just upload it on a free website or smth).
-4. Click on "Genera" and copy the output.
-5. Now you have to convert the text in SQL, I used this [website](https://konbert.com/convert/txt/to/sqlite).
-6. Download the SQL file, and replace that table to the "country_block" table of the "maxmind_country.db" of GeoLite. You can use any SQL editor to do so.
-7. Make sure that the file structure is exactly the same of the original and Try it :)
-
-
 # UPDATE JANUARY 2026
 
 Updated the city and the asn db too with the help of copilot. Based on the [IP2LocationLite]([https://lite.ip2location.com/database/db1-ip-country](https://lite.ip2location.com/database/db11-ip-country-region-city-latitude-longitude-zipcode-timezone)) database.
@@ -32,6 +17,21 @@ Steps (ASN Database):
 2. Unzip the IP2Location db in order to have the .CSV file ready to use.
 3. Put everything in the same folder of "[maxmind_asn_generator.py](https://github.com/ReshiramZekrom1/geolite/blob/master/maxmind_asn_generator.py)".
 4. Run the py file and wait.
+
+
+# UPDATE DECEMBER 2024
+
+I've managed to update the country database only since the old one was indeed just too old. It's based on the [IP2LocationLite](https://lite.ip2location.com/database/db1-ip-country) database though. 
+
+In case you'd like to update it again, you can use the crappy but functioning tool I made with PHP. Just follow those passages:
+
+1. Download the IP2Location Lite Country DB in .CSV from [here](https://lite.ip2location.com/database/db1-ip-country) (Requires signing-up). The CSV db should look like the one in the repository.
+2. Open the CSV file with Notepad++.
+3. Copy all the content and paste it in the PHP page you can find in the repository (just upload it on a free website or smth).
+4. Click on "Genera" and copy the output.
+5. Now you have to convert the text in SQL, I used this [website](https://konbert.com/convert/txt/to/sqlite).
+6. Download the SQL file, and replace that table to the "country_block" table of the "maxmind_country.db" of GeoLite. You can use any SQL editor to do so.
+7. Make sure that the file structure is exactly the same of the original and Try it :)
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
